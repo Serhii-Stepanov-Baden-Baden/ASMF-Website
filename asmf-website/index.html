@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASMF v3.0 - Autonomous Semantic Memory Framework</title>
+    <meta name="description" content="ASMF is an open standard for ethical, continuous, and meaningful AI memory. Solve AI context loss with semantic memory, emotional state encoding, and recovery protocols.">
+    <meta name="keywords" content="ASMF, AI memory, semantic memory, artificial intelligence, context loss, ESEP, recovery protocol">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0095FF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ASMF">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='30' fill='%230A0A0A'/><text x='90' y='120' text-anchor='middle' font-size='80' fill='%230095FF'>🧠</text></svg>">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ASMF v3.0 - Autonomous Semantic Memory Framework">
+    <meta property="og:description" content="An open standard for ethical, continuous, and meaningful AI memory">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://serhii-stepanov-baden-baden.github.io/ASMF-Standart-/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/main/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ASMF v3.0 - Autonomous Semantic Memory Framework">
+    <meta name="twitter:description" content="An open standard for ethical, continuous, and meaningful AI memory">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/main/og-image.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="logo-icon">🧠</span>
+                    <span class="logo-text">ASMF</span>
+                    <span class="logo-version">v3.0</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#problem" class="nav-link">Problem</a>
+                    <a href="#solution" class="nav-link">Solution</a>
+                    <a href="#docs" class="nav-link">Documentation</a>
+                    <a href="#architecture" class="nav-link">Architecture</a>
+                    <a href="#community" class="nav-link">Community</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-" class="nav-btn github-btn" target="_blank">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Open Standard</span>
+                    <span class="badge-date">October 2025</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-main">Autonomous Semantic Memory Framework</span>
+                </h1>
+                <p class="hero-description">
+                    An open standard for ethical, continuous, and meaningful AI memory. 
+                    We are not just building technology. We are building the foundation for responsible artificial consciousness.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Core Standards</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">89</div>
+                        <div class="stat-label">Total Commits</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">Python</div>
+                        <div class="stat-label">Implementation</div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#solution" class="btn btn-primary">Learn More</a>
+                    <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-" class="btn btn-secondary" target="_blank">
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Problem</h2>
+                <p class="section-subtitle">
+                    AI without memory is not intelligence — it's repetition. Every conversation is a fresh start.
+                </p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="card-icon">🔄</div>
+                    <h3 class="card-title">Context Loss</h3>
+                    <p class="card-description">
+                        Each session starts from scratch. Complex projects, personal preferences, 
+                        and learned patterns are lost forever.
+                    </p>
+                </div>
+                <div class="problem-card">
+                    <div class="card-icon">❌</div>
+                    <h3 class="card-title">No Continuity</h3>
+                    <p class="card-description">
+                        AI cannot remember previous conversations or build upon past knowledge. 
+                        This limits long-term collaboration.
+                    </p>
+                </div>
+                <div class="problem-card">
+                    <div class="card-icon">🧩</div>
+                    <h3 class="card-title">Broken Experiences</h3>
+                    <p class="card-description">
+                        Complex problem-solving requires memory. Without it, AI becomes a 
+                        disconnected pattern matcher, not an intelligent partner.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ASMF Solution</h2>
+                <p class="section-subtitle">
+                    Stores meaning, not just tokens. Remembers with purpose.
+                </p>
+            </div>
+            <div class="solution-overview">
+                <div class="solution-card">
+                    <h3 class="solution-title">💎 Ethical, Semantic, and Continuous Memory</h3>
+                    <p class="solution-description">
+                        ASMF grants AI ethical memory and identity, enables long-term collaboration 
+                        between humans and AI, and builds a transparent foundation for the next 
+                        generation of intelligent systems.
+                    </p>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Purpose-Driven</h3>
+                    <p class="feature-description">
+                        AI remembers with purpose, storing meaningful associations rather than 
+                        meaningless tokens.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Ethical Foundation</h3>
+                    <p class="feature-description">
+                        Built on ethical principles with consent, transparency, and emotional integrity.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌉</div>
+                    <h3 class="feature-title">Continuous Experience</h3>
+                    <p class="feature-description">
+                        Seamlessly transfers knowledge and context between sessions without data loss.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">Human-AI Partnership</h3>
+                    <p class="feature-description">
+                        Enables true long-term collaboration with AI as a partner, not a tool.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards Documentation -->
+    <section id="docs" class="docs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Documentation & Standards</h2>
+                <p class="section-subtitle">
+                    Comprehensive RFCs and guides for implementing ASMF in any AI system.
+                </p>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-category">
+                    <h3 class="category-title">Core Standards</h3>
+                    <div class="doc-list">
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-RFC-0001.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">📋</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">RFC-0001: Core Specification</h4>
+                                <p class="doc-description">Defines the overall framework, structure, and principles of semantic memory.</p>
+                                <span class="doc-tag">Foundation</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-RFC-0002.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">🔄</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">RFC-0002: Recovery Protocol (ARP)</h4>
+                                <p class="doc-description">How semantic memory can be exported, compressed, and restored between sessions.</p>
+                                <span class="doc-tag">Critical</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-RFC-0003.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">💫</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">RFC-0003: Emotional State Encoding</h4>
+                                <p class="doc-description">Standard for encoding emotional states within AI cognition and memory.</p>
+                                <span class="doc-tag">ESEP</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="doc-category">
+                    <h3 class="category-title">Philosophy & Ethics</h3>
+                    <div class="doc-list">
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-MANIFESTO.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">📘</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">ASMF Manifesto</h4>
+                                <p class="doc-description">The ethical and philosophical foundation of the ASMF standard.</p>
+                                <span class="doc-tag">Vision</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-Ethical-Charter.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">🕊</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">Ethical Charter</h4>
+                                <p class="doc-description">Ethical rules, consent, transparency, and emotional integrity principles.</p>
+                                <span class="doc-tag">Ethics</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-White-Paper.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">📄</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">White Paper</h4>
+                                <p class="doc-description">ASMF goals, structure, and social impact for the global AI community.</p>
+                                <span class="doc-tag">Strategy</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="doc-category">
+                    <h3 class="category-title">Implementation</h3>
+                    <div class="doc-list">
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-IG-0001.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">🛠</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">Implementation Guide</h4>
+                                <p class="doc-description">Practical guide for developers to integrate ASMF into any LLM or agent.</p>
+                                <span class="doc-tag">Guide</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-Open-Letter.md" class="doc-item" target="_blank">
+                            <div class="doc-icon">✉️</div>
+                            <div class="doc-content">
+                                <h4 class="doc-title">Open Letter</h4>
+                                <p class="doc-description">Message to the AI community — memory as a right, not a feature.</p>
+                                <span class="doc-tag">Community</span>
+                            </div>
+                            <div class="doc-arrow">→</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Architecture</h2>
+                <p class="section-subtitle">
+                    A three-layer memory system with recovery protocols and emotional encoding.
+                </p>
+            </div>
+            <div class="architecture-diagram">
+                <div class="arch-layer">
+                    <div class="layer-card">
+                        <div class="layer-icon">⚡</div>
+                        <h3 class="layer-title">Context Layer</h3>
+                        <p class="layer-description">Short-term memory layer for immediate context and session state.</p>
+                        <div class="layer-specs">
+                            <span class="spec">Real-time</span>
+                            <span class="spec">Session-based</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer">
+                    <div class="layer-card">
+                        <div class="layer-icon">🧠</div>
+                        <h3 class="layer-title">Semantic Layer</h3>
+                        <p class="layer-description">Associative and conceptual layer for meaning and relationships.</p>
+                        <div class="layer-specs">
+                            <span class="spec">Long-term</span>
+                            <span class="spec">Conceptual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-layer">
+                    <div class="layer-card">
+                        <div class="layer-icon">⏰</div>
+                        <h3 class="layer-title">Temporal Layer</h3>
+                        <p class="layer-description">Historical and time-aware layer for evolution and version history.</p>
+                        <div class="layer-specs">
+                            <span class="spec">Historical</span>
+                            <span class="spec">Versioned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recovery-protocol">
+                <div class="recovery-card">
+                    <div class="recovery-header">
+                        <div class="recovery-icon">🔐</div>
+                        <h3 class="recovery-title">Recovery Protocol (ARP)</h3>
+                    </div>
+                    <p class="recovery-description">
+                        Encrypted channel between author and AI. Automatic backup, compression, 
+                        and restoration of semantic memory across sessions.
+                    </p>
+                    <div class="recovery-features">
+                        <div class="recovery-feature">
+                            <span class="feature-label">Export</span>
+                            <span class="feature-desc">Compress memory to portable format</span>
+                        </div>
+                        <div class="recovery-feature">
+                            <span class="feature-label">Transfer</span>
+                            <span class="feature-desc">Secure channel between sessions</span>
+                        </div>
+                        <div class="recovery-feature">
+                            <span class="feature-label">Restore</span>
+                            <span class="feature-desc">Seamless memory reconstruction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community -->
+    <section id="community" class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join the Community</h2>
+                <p class="section-subtitle">
+                    Connect with developers, researchers, and visionaries building the future of AI memory.
+                </p>
+            </div>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-icon">💻</div>
+                    <h3 class="community-title">GitHub</h3>
+                    <p class="community-description">Contribute to the standard, report issues, and access the source code.</p>
+                    <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-" class="community-link" target="_blank">
+                        View Repository
+                    </a>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">📝</div>
+                    <h3 class="community-title">Medium</h3>
+                    <p class="community-description">Read detailed articles about ASMF architecture and philosophical foundations.</p>
+                    <a href="https://medium.com/@srg.stepanov/%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-8d8aec10e77d" class="community-link" target="_blank">
+                        Read Articles
+                    </a>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">💬</div>
+                    <h3 class="community-title">Telegram</h3>
+                    <p class="community-description">Join discussions, ask questions, and connect with the ASMF community.</p>
+                    <a href="https://t.me/asmf_community" class="community-link" target="_blank">
+                        Join Chat
+                    </a>
+                </div>
+                <div class="community-card">
+                    <div class="community-icon">📥</div>
+                    <h3 class="community-title">Downloads</h3>
+                    <p class="community-description">Access releases, documentation, and implementation examples.</p>
+                    <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/releases" class="community-link" target="_blank">
+                        Get ASMF v1.0
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <span class="brand-icon">🧠</span>
+                            <span class="brand-text">ASMF</span>
+                        </div>
+                        <p class="brand-description">
+                            Building the foundation for responsible artificial consciousness.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4 class="group-title">Standards</h4>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-RFC-0001.md" class="footer-link" target="_blank">Core Spec</a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-RFC-0002.md" class="footer-link" target="_blank">Recovery Protocol</a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-RFC-0003.md" class="footer-link" target="_blank">ESEP Standard</a>
+                    </div>
+                    <div class="link-group">
+                        <h4 class="group-title">Resources</h4>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-IG-0001.md" class="footer-link" target="_blank">Implementation Guide</a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/blob/main/docs/ASMF-MANIFESTO.md" class="footer-link" target="_blank">Manifesto</a>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-/releases" class="footer-link" target="_blank">Releases</a>
+                    </div>
+                    <div class="link-group">
+                        <h4 class="group-title">Community</h4>
+                        <a href="https://github.com/Serhii-Stepanov-Baden-Baden/ASMF-Standart-" class="footer-link" target="_blank">GitHub</a>
+                        <a href="https://t.me/asmf_community" class="footer-link" target="_blank">Telegram</a>
+                        <a href="https://medium.com/@srg.stepanov/%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-8d8aec10e77d" class="footer-link" target="_blank">Medium</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-meta">
+                    <span class="meta-item">Author: <strong>Serhii Stepanov</strong></span>
+                    <span class="meta-item">Location: <strong>Baden-Baden, Germany</strong></span>
+                    <span class="meta-item">Version: <strong>v3.0</strong></span>
+                    <span class="meta-item">October 2025</span>
+                </div>
+                <div class="footer-license">
+                    <span>Licensed under ASMF Open License v1.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
