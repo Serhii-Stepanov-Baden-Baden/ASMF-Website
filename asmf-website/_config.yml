@@ -1,0 +1,61 @@
+# GitHub Pages Configuration for ASMF Website
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+
+# Exclude files from processing
+exclude:
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - vendor/
+  - .git/
+  - .github/
+
+# Include necessary files
+include:
+  - _redirects
+  - CNAME
+
+# Permalinks
+permalink: /:title/
+
+# Site settings
+title: "ASMF v3.0 - Autonomous Semantic Memory Framework"
+description: "An open standard for ethical, continuous, and meaningful AI memory"
+url: "https://serhii-stepanov-baden-baden.github.io"
+
+# Author information
+author:
+  name: "Serhii Stepanov"
+  email: "contact@example.com"
+  location: "Baden-Baden, Germany"
+
+# Social links
+social:
+  github: "Serhii-Stepanov-Baden-Baden"
+  telegram: "asmf_community"
+  medium: "srg.stepanov"
+
+# Navigation
+navigation:
+  - title: "Problem"
+    url: "#problem"
+  - title: "Solution"
+    url: "#solution"
+  - title: "Documentation"
+    url: "#docs"
+  - title: "Architecture"
+    url: "#architecture"
+  - title: "Community"
+    url: "#community"
+
+# Features
+jekyll_incremental: true
+jekyll_sitemap: false
+
+# Highlighter
+highlighter: rouge
