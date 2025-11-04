@@ -5,7 +5,7 @@ window.RICH = {
 
     container.innerHTML = `
       <div style="padding:20px; font-family:sans-serif;">
-        <h2>🤖 RICH — цифровой интеллект от Stepanov</h2>
+        <h2>🤖 RICH AI Agent </h2>
         <div id="rich-output" style="margin-top:10px;"></div>
         <input id="rich-input" type="text" placeholder="Спроси у RICH..." style="width:100%; padding:10px; margin-top:10px;">
       </div>
