@@ -472,11 +472,10 @@
 <div id="chat" style="margin-top: 50px;">
   <h3>RICH Agent</h3>
   <form id="chatForm">
-    <input type="text" id="input" placeholder="Напиши сообщение..." />
-    <button type="submit">Send</button>
-  </form>
-  <div id="response" style="margin-top: 10px; font-weight: bold;"></div>
-</div>
+  <input type="text" id="input" />
+  <button type="submit">Send</button>
+</form>
+<div id="response"></div>
 
 <script>
   document.getElementById("chatForm").addEventListener("submit", async function (e) {
