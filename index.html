@@ -469,18 +469,34 @@
             </div>
         </div>
     </footer>
-<!-- RICH: цифровой интеллект от Stepanov -->
-<div id="rich-agent"></div>
-    <script src="js/asmf.js"></script>
+<div id="chat" style="margin-top: 50px;">
+  <h3>RICH Agent</h3>
+  <form id="chatForm">
+    <input type="text" id="input" placeholder="Напиши сообщение..." />
+    <button type="submit">Send</button>
+  </form>
+  <div id="response" style="margin-top: 10px; font-weight: bold;"></div>
+</div>
 <script>
-  window.RICH.init({
-    endpoint: "https://rich-backend.vercel.app",
-    creator: "Stepanov",
-    memory: true,
-    personality: "teacher, resilient, progressive, friendly",
-    driveAccount: "mobelmagiehelden@gmail.com"
+  document.getElementById("chatForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const message = document.getElementById("input").value;
+
+    const res = await fetch("https://rich-backend.vercel.app/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        creator: "Stepanov",
+        message: message,
+        personality: "visionary"
+      })
+    });
+
+    const data = await res.json();
+    document.getElementById("response").innerText = data.reply;
   });
 </script>
+
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
